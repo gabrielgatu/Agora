@@ -9,11 +9,11 @@ class QuestionsController < ApplicationController
 	end
 
 	def new
-		@question = Question.new
+		@question = current_user.questions.build
 	end
 
 	def create
-		@question = Question.new(question_params)
+		@question = current_user.questions.build(question_params)
 
 		if @question.save
 			redirect_to root_path
@@ -35,7 +35,7 @@ class QuestionsController < ApplicationController
 
 	def destroy
 		@question.delete
-		redirect_to root_path
+		redirect_to root_pa
 	end 
 
 	private 

@@ -2,7 +2,7 @@ class AnswersController < ApplicationController
 
 	def create
 		@question = Question.find(params[:question_id])
-		@answer = Answer.create(params[:comment].permit(:content))
+		@answer = Answer.create(params[:answer].permit(:content))
 		@answer.question_id = @question.id
 		@answer.user_id = current_user.id
 

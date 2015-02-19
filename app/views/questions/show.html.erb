@@ -2,6 +2,8 @@
 <p><%= @question.content %></p>
 <p><%= @question.user.email %></p>
 
+<%= render "answers/form" %>
+
 <% @answers.each do |answer| %>
 	<p><%= answer.content %></p>
 	<p>Submitted by: <%= answer.user.name  %></p>

@@ -2,4 +2,4 @@
 
 A simple website where you can ask a question about android and a folk will answer to your question in minutes.
 
-* This web app is projected for the android course currently taught by me at the itis pininfarina. 
+* This web app is projected for the android course currently taught by me at the itis pininfarina and it's still under active development. 
